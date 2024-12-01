@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal War</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            color: #006400; /* Verde */
+        }
+
+        h1 img {
+            width: 50px;
+            margin-right: 15px;
+        }
+
+        a {
+            color: #006400;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .noticias img {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .noticias button {
+            background-color: #006400;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .noticias button:hover {
+            background-color: #004d00;
+        }
+
+        .noticias div {
+            display: none;
+        }
+
+        .noticias div.mostrar-noticias {
+            display: block;
+        }
+
+        .contenido-capitulo {
+            margin-bottom: 40px; /* Espaciado entre capítulos */
+        }
+
+        .temporada {
+            margin-bottom: 80px; /* Espaciado entre temporadas */
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo y título -->
+    <h1>
+        <img src="aw.jpg" alt="Logo de Animal War">
+        ANIMAL WAR
+    </h1>
+
+    <!-- Noticias -->
+    <div class="noticias">
+        <h2>Noticias</h2>
+        <button onclick="mostrarNoticias()">Ver Noticias</button>
+        <div id="noticiasContainer">
+            <img src="p1.jpg" alt="Noticia 1">
+            <img src="p2.jpg" alt="Noticia 2">
+            <img src="p3.jpg" alt="Noticia 3">
+        </div>
+    </div>
+
+    <!-- Temporada 1 -->
+    <div class="temporada">
+        <h2>Temporada #1</h2>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #1 - Aquí empieza todo</h3>
+            <p><strong>Publicación:</strong> 13/12/2023</p>
+            <p><strong>Link:</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7308579150032375045" target="_blank">Animal War Temporada #1 Capítulo #1</a></p>
+        </div>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #2 - Aracni ¿Qué?</h3>
+            <p><strong>Publicación:</strong> 10/01/2024</p>
+            <p><strong>Link:</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7310003929012653317" target="_blank">Animal War Temporada #1 Capítulo #2</a></p>
+        </div>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #3 - Flexible e Irrompible</h3>
+            <p><strong>Publicación:</strong> 18/01/2024</p>
+            <p><strong>Link:</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7324396971223944453" target="_blank">Animal War Temporada #1 Capítulo #3</a></p>
+        </div>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #4 - Peligro inminente</h3>
+            <p><strong>Publicación:</strong> 27/01/2024</p>
+            <p><strong>Link:</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7325824964534357254" target="_blank">Animal War Temporada #1 Capítulo #4</a></p>
+        </div>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #5 - Calor contra frío</h3>
+            <p><strong>Publicación:</strong> 04/02/2024</p>
+            <p><strong>Link:</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7328212060817394950" target="_blank">Animal War Temporada #1 Capítulo #5</a></p>
+        </div>
+    </div>
+
+    <!-- Temporada 2 -->
+    <div class="temporada">
+        <h2>Temporada #2</h2>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #1 - ¿Habrá mañana?</h3>
+            <p><strong>Publicación:</strong> 16/02/2024</p>
+            <p><strong>Link (Parte 1):</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7336060463538507014" target="_blank">Parte 1</a></p>
+            <p><strong>Link (Parte 2):</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7336061431953116421" target="_blank">Parte 2</a></p>
+        </div>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #2 - Está escrito...</h3>
+            <p><strong>Publicación:</strong> 23/02/2024</p>
+            <p><strong>Link (Parte 1):</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7338672337769778437" target="_blank">Parte 1</a></p>
+            <p><strong>Link (Parte 2):</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7338672964239478022" target="_blank">Parte 2</a></p>
+        </div>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #3 - Hidrobatalla</h3>
+            <p><strong>Publicación:</strong> 08/04/2024</p>
+            <p><strong>Link (Parte 1):</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7355608393647688965" target="_blank">Parte 1</a></p>
+            <p><strong>Link (Parte 2):</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7355609939508874501" target="_blank">Parte 2</a></p>
+        </div>
+        <div class="contenido-capitulo">
+            <h3>Capítulo #4 - Adictos al chocolate</h3>
+            <p><strong>Publicación:</strong> 25/11/2024</p>
+            <p><strong>Link (Parte 1):</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7441306515484527928" target="_blank">Parte 1</a></p>
+            <p><strong>Link (Parte 2):</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7441311497021672759" target="_blank">Parte 2</a></p>
+        </div>
+    </div>
+
+    <!-- Especiales -->
+    <div class="temporada">
+        <h2>Especiales</h2>
+        <div class="contenido-capitulo">
+            <h3>Especial #1 - Como un león</h3>
+            <p><strong>Publicación:</strong> 10/02/2024</p>
+            <p><strong>Link:</strong> <a href="https://www.tiktok.com/@animalwarofficial/photo/7330834579667963141" target="_blank">Animal War Especial #1</a></p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarNoticias() {
+            const container = document.getElementById('noticiasContainer');
+            container.classList.toggle('mostrar-noticias');
+        }
+    </script>
+</body>
+</html>
+
