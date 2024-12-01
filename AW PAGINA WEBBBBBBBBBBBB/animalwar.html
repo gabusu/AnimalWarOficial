@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal War</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo h1 {
+            font-size: 36px;
+            color: #006400;
+        }
+
+        .logo p {
+            font-size: 18px;
+            color: #006400;
+        }
+
+        .botones button {
+            background-color: #006400;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .botones button:hover {
+            background-color: #004d00;
+        }
+
+        .seccion {
+            display: none;
+            padding: 20px;
+        }
+
+        .seccion.mostrar {
+            display: block;
+        }
+
+        .ocultar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Página de inicio -->
+    <div id="inicio" class="seccion mostrar">
+        <div class="logo">
+            <h1>ANIMAL WAR</h1>
+            <p>~Serie de cómics~</p>
+        </div>
+        <div class="botones">
+            <button onclick="mostrarSeccion('temporada1')">TEMPORADA #1</button>
+            <button onclick="mostrarSeccion('temporada2')">TEMPORADA #2</button>
+            <button onclick="mostrarSeccion('especiales')">ESPECIALES</button>
+        </div>
+    </div>
+
+    <!-- Temporada 1 -->
+    <div id="temporada1" class="seccion ocultar">
+        <h2>TEMPORADA #1</h2>
+        <button onclick="mostrarSeccion('inicio')">Volver</button>
+        <div class="botones">
+            <button>CAPÍTULO #1</button>
+            <button>CAPÍTULO #2</button>
+            <button>CAPÍTULO #3</button>
+            <button>CAPÍTULO #4</button>
+            <button>CAPÍTULO #5</button>
+        </div>
+    </div>
+
+    <!-- Temporada 2 -->
+    <div id="temporada2" class="seccion ocultar">
+        <h2>TEMPORADA #2</h2>
+        <button onclick="mostrarSeccion('inicio')">Volver</button>
+        <div class="botones">
+            <button>CAPÍTULO #1</button>
+            <button>CAPÍTULO #2</button>
+            <button>CAPÍTULO #3</button>
+            <button>CAPÍTULO #4</button>
+            <button>CAPÍTULO #5</button>
+        </div>
+    </div>
+
+    <!-- Especiales -->
+    <div id="especiales" class="seccion ocultar">
+        <h2>ESPECIALES</h2>
+        <button onclick="mostrarSeccion('inicio')">Volver</button>
+        <div class="botones">
+            <button>ESPECIAL #1</button>
+            <button>ESPECIAL #2</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarSeccion(seccionID) {
+            // Ocultar todas las secciones
+            const secciones = document.querySelectorAll('.seccion');
+            secciones.forEach(seccion => seccion.classList.remove('mostrar'));
+
+            // Mostrar la sección seleccionada
+            document.getElementById(seccionID).classList.add('mostrar');
+        }
+    </script>
+</body>
+</html>
